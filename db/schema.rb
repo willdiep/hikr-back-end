@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 2020_01_22_180938) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "hikingtrails", force: :cascade do |t|
     t.string "name"
     t.string "distance"
@@ -24,8 +27,8 @@ ActiveRecord::Schema.define(version: 2020_01_22_180938) do
   end
 
   create_table "tags", force: :cascade do |t|
-    t.integer "user_id", null: false
-    t.integer "hikingtrail_id", null: false
+    t.bigint "user_id", null: false
+    t.bigint "hikingtrail_id", null: false
     t.boolean "kidfriendly", default: false, null: false
     t.boolean "dogfriendly", default: false, null: false
     t.boolean "wheelchairaccessible", default: false, null: false
