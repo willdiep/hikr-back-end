@@ -33,7 +33,7 @@ class HikingtrailsController < ApplicationController
   end
 
   def hikingtrail_params
-      params.require(:hikingtrail).permit(:hikingtrailname, :name, :email, :password)
+      params.require(:hikingtrail).permit(:name, :distance, :location, :longitude, :latitude)
   end
 end
 

@@ -5972,3 +5972,141 @@ ActionController::ParameterMissing (param is missing or the value is empty: hiki
   
 app/controllers/hikingtrails_controller.rb:36:in `hikingtrail_params'
 app/controllers/hikingtrails_controller.rb:16:in `create'
+Started GET "/users" for ::1 at 2020-01-23 09:53:07 -0800
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 29ms (Views: 12.0ms | ActiveRecord: 8.3ms | Allocations: 9234)
+
+
+Started POST "/hikingtrails" for ::1 at 2020-01-23 09:53:11 -0800
+Started POST "/hikingtrails" for ::1 at 2020-01-23 09:53:11 -0800
+Started POST "/hikingtrails" for ::1 at 2020-01-23 09:53:11 -0800
+Started POST "/hikingtrails" for ::1 at 2020-01-23 09:53:11 -0800
+Started POST "/hikingtrails" for ::1 at 2020-01-23 09:53:11 -0800
+Processing by HikingtrailsController#create as JSON
+  Parameters: {"info"=>{"name"=>"Wildwood Trail - National Recreation Trail", "location"=>"West Haven-Sylvan, Oregon", "distance"=>29.4, "longitude"=>-122.717, "latitude"=>45.5127}, "hikingtrail"=>{}}
+  [1m[36mHikingtrail Load (2.6ms)[0m  [1m[34mSELECT "hikingtrails".* FROM "hikingtrails" WHERE "hikingtrails"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/hikingtrails_controller.rb:32:in `find_trail'
+Completed 400 Bad Request in 19ms (ActiveRecord: 18.4ms | Allocations: 2471)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: hikingtrail):
+  
+app/controllers/hikingtrails_controller.rb:36:in `hikingtrail_params'
+app/controllers/hikingtrails_controller.rb:16:in `create'
+Started POST "/hikingtrails" for ::1 at 2020-01-23 09:53:11 -0800
+Processing by HikingtrailsController#create as JSON
+Processing by HikingtrailsController#create as JSON
+Processing by HikingtrailsController#create as JSON
+  Parameters: {"info"=>{"name"=>"Hoyt Arboretum Loop", "location"=>"West Haven-Sylvan, Oregon", "distance"=>3.4, "longitude"=>-122.717, "latitude"=>45.5127}, "hikingtrail"=>{}}
+  Parameters: {"info"=>{"name"=>"Nature Trail / Wild Cherry Loop", "location"=>"Portland, Oregon", "distance"=>8.1, "longitude"=>-122.7242, "latitude"=>45.5397}, "hikingtrail"=>{}}
+  Parameters: {"info"=>{"name"=>"Saltzman Road", "location"=>"West Haven, Oregon", "distance"=>3.9, "longitude"=>-122.7467, "latitude"=>45.5642}, "hikingtrail"=>{}}
+  [1m[36mHikingtrail Load (1.4ms)[0m  [1m[34mSELECT "hikingtrails".* FROM "hikingtrails" WHERE "hikingtrails"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+Processing by HikingtrailsController#create as JSON
+Processing by HikingtrailsController#create as JSON
+  [1m[36mHikingtrail Load (2.8ms)[0m  [1m[34mSELECT "hikingtrails".* FROM "hikingtrails" WHERE "hikingtrails"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  Parameters: {"info"=>{"name"=>"Tryon Creek Loop", "location"=>"Lake Oswego, Oregon", "distance"=>3.4, "longitude"=>-122.676, "latitude"=>45.4414}, "hikingtrail"=>{}}
+  Parameters: {"info"=>{"name"=>"Super Maple", "location"=>"West Haven, Oregon", "distance"=>10.7, "longitude"=>-122.7535, "latitude"=>45.5664}, "hikingtrail"=>{}}
+  ↳ app/controllers/hikingtrails_controller.rb:32:in `find_trail'
+  [1m[36mHikingtrail Load (2.5ms)[0m  [1m[34mSELECT "hikingtrails".* FROM "hikingtrails" WHERE "hikingtrails"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+Completed 400 Bad Request in 11ms (ActiveRecord: 1.4ms | Allocations: 3199)
+
+
+  ↳ app/controllers/hikingtrails_controller.rb:32:in `find_trail'
+  ↳ app/controllers/hikingtrails_controller.rb:32:in `find_trail'
+Completed 400 Bad Request in 18ms (ActiveRecord: 5.8ms | Allocations: 5913)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: hikingtrail):
+  
+app/controllers/hikingtrails_controller.rb:36:in `hikingtrail_params'
+app/controllers/hikingtrails_controller.rb:16:in `create'
+  [1m[36mHikingtrail Load (2.6ms)[0m  [1m[34mSELECT "hikingtrails".* FROM "hikingtrails" WHERE "hikingtrails"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/hikingtrails_controller.rb:32:in `find_trail'
+Completed 400 Bad Request in 65ms (ActiveRecord: 4.2ms | Allocations: 29207)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: hikingtrail):
+  
+app/controllers/hikingtrails_controller.rb:36:in `hikingtrail_params'
+app/controllers/hikingtrails_controller.rb:16:in `create'
+Completed 400 Bad Request in 19ms (ActiveRecord: 5.2ms | Allocations: 6030)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: hikingtrail):
+  
+app/controllers/hikingtrails_controller.rb:36:in `hikingtrail_params'
+app/controllers/hikingtrails_controller.rb:16:in `create'
+  [1m[36mHikingtrail Load (54.9ms)[0m  [1m[34mSELECT "hikingtrails".* FROM "hikingtrails" WHERE "hikingtrails"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/hikingtrails_controller.rb:32:in `find_trail'
+Completed 400 Bad Request in 146ms (ActiveRecord: 57.1ms | Allocations: 83211)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: hikingtrail):
+  
+app/controllers/hikingtrails_controller.rb:36:in `hikingtrail_params'
+app/controllers/hikingtrails_controller.rb:16:in `create'
+Started POST "/hikingtrails" for ::1 at 2020-01-23 09:53:11 -0800
+  
+ActionController::ParameterMissing (param is missing or the value is empty: hikingtrail):
+  
+app/controllers/hikingtrails_controller.rb:36:in `hikingtrail_params'
+app/controllers/hikingtrails_controller.rb:16:in `create'
+Started POST "/hikingtrails" for ::1 at 2020-01-23 09:53:11 -0800
+Started POST "/hikingtrails" for ::1 at 2020-01-23 09:53:11 -0800
+Processing by HikingtrailsController#create as JSON
+  Parameters: {"info"=>{"name"=>"Upper Marquam Trail", "location"=>"Portland, Oregon", "distance"=>1.8, "longitude"=>-122.688, "latitude"=>45.4919}, "hikingtrail"=>{}}
+Processing by HikingtrailsController#create as JSON
+  Parameters: {"info"=>{"name"=>"Creek Trail", "location"=>"Aloha, Oregon", "distance"=>0.4, "longitude"=>-122.8455, "latitude"=>45.5002}, "hikingtrail"=>{}}
+Processing by HikingtrailsController#create as JSON
+  Parameters: {"info"=>{"name"=>"Linnton Trail", "location"=>"Cedar Mill, Oregon", "distance"=>0.5, "longitude"=>-122.7904, "latitude"=>45.595}, "hikingtrail"=>{}}
+  [1m[36mHikingtrail Load (1.0ms)[0m  [1m[34mSELECT "hikingtrails".* FROM "hikingtrails" WHERE "hikingtrails"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mHikingtrail Load (4.7ms)[0m  [1m[34mSELECT "hikingtrails".* FROM "hikingtrails" WHERE "hikingtrails"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/hikingtrails_controller.rb:32:in `find_trail'
+  ↳ app/controllers/hikingtrails_controller.rb:32:in `find_trail'
+  [1m[36mHikingtrail Load (1.6ms)[0m  [1m[34mSELECT "hikingtrails".* FROM "hikingtrails" WHERE "hikingtrails"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+Completed 400 Bad Request in 6ms (ActiveRecord: 1.0ms | Allocations: 2263)
+
+
+  ↳ app/controllers/hikingtrails_controller.rb:32:in `find_trail'
+  
+ActionController::ParameterMissing (param is missing or the value is empty: hikingtrail):
+  
+app/controllers/hikingtrails_controller.rb:36:in `hikingtrail_params'
+app/controllers/hikingtrails_controller.rb:16:in `create'
+Completed 400 Bad Request in 9ms (ActiveRecord: 4.7ms | Allocations: 2817)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: hikingtrail):
+  
+app/controllers/hikingtrails_controller.rb:36:in `hikingtrail_params'
+app/controllers/hikingtrails_controller.rb:16:in `create'
+Completed 400 Bad Request in 33ms (ActiveRecord: 1.6ms | Allocations: 28979)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: hikingtrail):
+  
+app/controllers/hikingtrails_controller.rb:36:in `hikingtrail_params'
+app/controllers/hikingtrails_controller.rb:16:in `create'
+Started POST "/hikingtrails" for ::1 at 2020-01-23 09:53:12 -0800
+Processing by HikingtrailsController#create as JSON
+  Parameters: {"info"=>{"name"=>"Dogwood Trail", "location"=>"West Haven, Oregon", "distance"=>1, "longitude"=>-122.7308, "latitude"=>45.5463}, "hikingtrail"=>{}}
+  [1m[36mHikingtrail Load (3.9ms)[0m  [1m[34mSELECT "hikingtrails".* FROM "hikingtrails" WHERE "hikingtrails"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/hikingtrails_controller.rb:32:in `find_trail'
+Completed 400 Bad Request in 8ms (ActiveRecord: 3.9ms | Allocations: 834)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: hikingtrail):
+  
+app/controllers/hikingtrails_controller.rb:36:in `hikingtrail_params'
+app/controllers/hikingtrails_controller.rb:16:in `create'
