@@ -1,4 +1,4 @@
-# User.destroy_all
+1# User.destroy_all
 # Hikingtrail.destroy_all
 # Tag.destroy_all
 
@@ -19,11 +19,59 @@ joseph = User.create(name: "Joseph", email: "josephisawesome@gmail.com", usernam
 
 
 
-landsend = Hikingtrail.create(name: "Lands End Trail", distance: "344", location: "San Francisco, CA")
+lands_end = Hikingtrail.create(
+  "name": "Coastal Trail: Lands End",
+  "summary": "A mega-popular hike hitting many Bay Area attractions in one fell swoop.",
+  "difficulty": "greenBlue",
+  "stars": 4.5,
+  "location": "San Francisco, California",
+  "url": "https://www.hikingproject.com/trail/7007647/coastal-trail-lands-end",
+  "image": "https://cdn-files.apstatic.com/hike/7013808_medium_1554823419.jpg",
+  "length": 2.9,
+  "ascent": 192,
+  "descent": -192,
+  "high": 260,
+  "low": 159,
+  "longitude": -122.5117,
+  "latitude": 37.7807,
+  "conditionStatus": "Unknown"
+)
+  
+hillside_loop = Hikingtrail.create(
+  "name": "Hillside Loop",
+  "summary": "Enjoy a loop around the world’s most visited redwood park under towering old growth Coastal Redwoods",
+  "difficulty": "greenBlue",
+  "stars": 4.7,
+  "location": "Tamalpais Valley, California",
+  "url": "https://www.hikingproject.com/trail/7017752/hillside-loop",
+  "image": "https://cdn-files.apstatic.com/hike/7017221_medium_1554829027.jpg",
+  "length": 2.5,
+  "ascent": 255,
+  "descent": -255,
+  "high": 315,
+  "low": 136,
+  "longitude": -122.5694,
+  "latitude": 37.8913,
+  "conditionStatus": "Unknown"
+)
 
-moragasteps = Hikingtrail.create(name: "Moraga Steps", distance: "0.1", location: "San Francisco, CA")
-
-woodwind = Hikingtrail.create(name: "Woodwind Trail", distance: "200", location: "Portland, Oregon")
+muir_beach_loop = Hikingtrail.create(
+  "name": "Muir Beach Loop",
+  "summary": "If you want to experience rugged California coast, this loop is perfect for you!",
+  "difficulty": "blue",
+  "stars": 4.3,
+  "location": "Tamalpais Valley, California",
+  "url": "https://www.hikingproject.com/trail/7016771/muir-beach-loop",
+  "image": "https://cdn-files.apstatic.com/hike/7011872_medium_1554560154.jpg",
+  "length": 5.8,
+  "ascent": 1164,
+  "descent": -1164,
+  "high": 889,
+  "low": 14,
+  "longitude": -122.5754,
+  "latitude": 37.8611,
+  "conditionStatus": "All Clear",
+)
 
 
 
