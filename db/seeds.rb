@@ -55,9 +55,7 @@ hillside_loop = Hikingtrail.create(
   "conditionStatus": "Unknown"
 )
 
-muir_beach_loop = Hikingtrail.create(
-  "name": "Muir Beach Loop",
-  "summary": "If you want to experience rugged California coast, this loop is perfect for you!",
+muir_beach_loop = Hikingtrail.create(                                                                                                                               we f  ew  e                            h  h  h       f v f v                                                                                              loop is perfect for you!",
   "difficulty": "blue",
   "stars": 4.3,
   "location": "Tamalpais Valley, California",
